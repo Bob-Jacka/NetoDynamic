@@ -47,9 +47,9 @@ int main()
 	int rows = 0;
 	int cols = 0;
 
-	println("Введите количество строк: ");
+	print("Введите количество строк: ");
 	intUserInput(rows);
-	println("Введите количество столбцов: ");
+	print("Введите количество столбцов: ");
 	intUserInput(cols);
 
 	double_array = create_two_dim_array(rows, cols);

@@ -10,7 +10,7 @@ int main(int argc, char** argv)
     if (array_size > 0) {
        dynamic_array = new int[array_size]; 
    } else {
-    throw 1;
+		throw 1;
    }
     
     int counter = 0; //array counter

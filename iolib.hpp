@@ -50,10 +50,7 @@ void lineArrayOutput(int* array, int array_size, string separator = " ", bool is
         	cout << array[i] << separator;
     }
     cout << array[array_size - 1];
-
-    if (!is_inline) {
-    	cout << endl;
-    }
+    cout << endl;
 }
 
 /*
@@ -64,4 +61,5 @@ void dynamicArrayOutput(T* array, int size, string separator = " ") {
 	for (int i = 0; i < size; i++)  {
         cout << array[i] << separator; 
 	}
+	cout << endl;
 }
