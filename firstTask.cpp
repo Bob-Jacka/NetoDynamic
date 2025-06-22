@@ -1,18 +1,12 @@
 #include "iolib.hpp"
 
-int main(int argc, char** argv)
-{
+int main() {
     int array_size = 0;
-    int* dynamic_array;
+    int *dynamic_array;
     println("Введите размер массива: ");
     intUserInput(array_size);
 
-    if (array_size > 0) {
-       dynamic_array = new int[array_size]; 
-   } else {
-	throw 1;
-   }
-    
+    dynamic_array = new int[array_size];
     int counter = 0; //array counter
     while (true) {
         if (counter < array_size) {
@@ -23,10 +17,10 @@ int main(int argc, char** argv)
             counter++;
         } else {
             break;
-        } 
+        }
     }
 
     println("Введённый массив: ");
-    lineArrayOutput(dynamic_array, array_size, " ", true);
+    lineArrayOutput(dynamic_array, array_size, " ");
     delete[] dynamic_array;
 }
